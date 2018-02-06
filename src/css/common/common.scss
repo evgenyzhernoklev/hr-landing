@@ -24,6 +24,10 @@ a {
   white-space: nowrap;
 }
 
+.bgGray {
+  background-color: $white-light;
+}
+
 .forDesktop {
   display: block;
 }
@@ -69,10 +73,9 @@ a {
 
 .titleMain {
 
-}
+  &__helper {
 
-.subtitleMain {
-
+  }
 }
 
 .contentIn {
@@ -85,15 +88,4 @@ a {
 
 @media ($mobile) {
 
-}
-
-
-
-// img
-.imgWrapper {
-
-}
-
-.imgWrapper__img {
-  vertical-align: middle;
 }
