@@ -1,12 +1,8 @@
 /*
 mixins for:
   clearfix
-  background-image
-  linear-gardient
   show animation
   hide animation
-
-  max lines of text
 */
 
 @mixin clearfix() {
@@ -24,21 +20,6 @@ mixins for:
   }
 }
 
-@mixin icon($name, $width, $height) {
-  display: inline-block;
-  width: $width;
-  height: $height;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url('../img/icons/svg/#{$name}.svg');
-  background-size: $width $height;
-}
-
-@mixin linear-gradient($angle, $from, $to) {
-  background: $from;
-  background: linear-gradient($angle, $from 0%, $to 100%);
-}
-
 @mixin show() {
   visibility: visible;
   opacity: 1;
@@ -49,14 +30,4 @@ mixins for:
   visibility: hidden;
   opacity: 0;
   transition: opacity $transition-normal, visibility $transition-normal;
-}
-
-
-
-//You want X lines of text. Anything after that gracefully cut off
-@mixin maxTextLines($maxLinesNumber) {
-  display: -webkit-box;
-  -webkit-line-clamp: $maxLinesNumber;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
