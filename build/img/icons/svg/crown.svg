@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="104px" height="88px" viewBox="0 0 104 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons8-crown" fill-rule="nonzero">
+            <polygon id="Shape" fill="#FFC107" points="83.2 75.0588235 20.8 75.0588235 7.8 23.2941176 33.8 44 52 10.3529412 70.2 44 96.2 23.2941176"></polygon>
+            <g id="Group" fill="#FF9800">
+                <rect id="Rectangle-path" x="20.8" y="75.0588235" width="62.4" height="12.9411765"></rect>
+                <ellipse id="Oval" cx="52" cy="5.17647059" rx="5.2" ry="5.17647059"></ellipse>
+                <ellipse id="Oval" cx="98.8" cy="18.1176471" rx="5.2" ry="5.17647059"></ellipse>
+                <ellipse id="Oval" cx="5.2" cy="18.1176471" rx="5.2" ry="5.17647059"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
