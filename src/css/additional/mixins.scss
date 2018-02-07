@@ -1,0 +1,25 @@
+@mixin clearfix() {
+  zoom: 1;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin show() {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity $transition-normal, visibility $transition-normal;
+}
+
+@mixin hide() {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity $transition-normal, visibility $transition-normal;
+}

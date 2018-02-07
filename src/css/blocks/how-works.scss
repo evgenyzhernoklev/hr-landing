@@ -1,15 +1,27 @@
 .howtoCols {
+  @include clearfix();
+  padding: 117px 0 121px;
 
   &__imgSlider {
-
+    float: left;
+    width: 50%;
   }
 
   &__infoSlider {
+    float: right;
+    width: 45%;
 
+    .slick-list {
+      overflow: visible;
+    }
+
+    .slick-track {
+      transform: none!important;
+    }
   }
 
   &__title {
-
+    margin-bottom: 46px;
   }
 }
 
@@ -25,16 +37,59 @@
 
 
 .infoSlider {
-
   &__slide {
+    position: relative;
+    display: flex!important;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 13px 0;
+    padding-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
 
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 100%;
+      border: 38px solid transparent;
+      border-right: 30px solid $red;
+    }
+
+    &.slick-current {
+      background-color: $red;
+      cursor: default;
+
+      &:before {
+        content: '';
+      }
+
+      .infoSlider__step {
+        color: $white;
+      }
+
+      .infoSlider__text {
+        color: $white;
+      }
+    }
   }
 
   &__step {
-
+    display: block;
+    flex-basis: 75px;
+    flex-shrink: 0;
+    padding-right: 15px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 800;
+    text-align: center;
+    color: #C0C0C0;
+    transition: color $transition-normal;
   }
 
   &__text {
-
+    font-size: 16px;
+    line-height: 25px;
+    transition: color $transition-normal;
   }
 }
