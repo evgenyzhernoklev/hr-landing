@@ -65,7 +65,7 @@ html
 
 			section.sectionAdvantages
 				.contentIn
-					.sectionAdvantages__title.titleMain
+					h3.sectionAdvantages__title.titleMain
 						| Почему&nbsp;
 						span.titleMain__helper Radar?
 					.colsFlex.advantages
@@ -87,46 +87,65 @@ html
 
 			section.sectionAreas
 				.contentIn
-					.colsFlex
-						.colFlex.sectionAreas__title
-							.titleMain
-								| Сервис
+					.sectionAreas__cols.colsFlex
+						.sectionAreas__title
+							h3.titleMain
+								| Сервис&nbsp;
 								span.titleMain__helper Radar
-								| подходит для поиска линейного персонала в любых сферах бизнеса
+								|  подходит для поиска линейного персонала в любых сферах бизнеса
 							a.sectionAreas__button.linkButton.linkButton--red href="#" разместить вакансию
-						.colFlex.sectionAreas__areas.areas
-							.areas__item.areasItem
-								img.areasItem__img src="../img/icons/svg/restaurant.svg"
-								span.areasItem__info Рестораны
-							.areas__item.areasItem
-								img.areasItem__img src="../img/icons/svg/fastfood.svg"
-								span.areasItem__info Фастфуд
-							.areas__item.areasItem
-								img.areasItem__img src="../img/icons/svg/buys.svg"
-								span.areasItem__info Сетевые магазины
-							.areas__item.areasItem
-								img.areasItem__img src="../img/icons/svg/bank.svg"
-								span.areasItem__info Банки и микрокредитование
-							.areas__item.areasItem
-								img.areasItem__img src="../img/icons/svg/headphones.svg"
-								span.areasItem__info Call-центры и телемаркетинг
-							.areas__item.areasItem
-								img.areasItem__img src="../img/icons/svg/cleaning.svg"
-								span.areasItem__info Клининговые компании
-							.areas__item.areasItem
-								img.areasItem__img src="../img/icons/svg/car.svg"
-								span.areasItem__info Логистические компании и такси
-							.areas__item.areasItem
-								img.areasItem__img src="../img/icons/svg/factory.svg"
-								span.areasItem__info Заводы и фабрики
-							.areas__item.areasItem
-								img.areasItem__img src="../img/icons/svg/building.svg"
-								span.areasItem__info Строительные компании
-							.areas__more и еще более 50 отраслей
+						.sectionAreas__areas
+							.areas
+								.areas__item.areasItem
+									.areasItem__in
+										.areasItem__imgWrapper
+											img.areasItem__img src="../img/icons/svg/restaurant.svg"
+										span.areasItem__info Рестораны
+								.areas__item.areasItem
+									.areasItem__in
+										.areasItem__imgWrapper
+											img.areasItem__img src="../img/icons/svg/fastfood.svg"
+										span.areasItem__info Фастфуд
+								.areas__item.areasItem
+									.areasItem__in
+										.areasItem__imgWrapper
+											img.areasItem__img src="../img/icons/svg/buys.svg"
+										span.areasItem__info Сетевые магазины
+								.areas__item.areasItem
+									.areasItem__in
+										.areasItem__imgWrapper
+											img.areasItem__img src="../img/icons/svg/bank.svg"
+										span.areasItem__info Банки и микрокредитование
+								.areas__item.areasItem
+									.areasItem__in
+										.areasItem__imgWrapper
+											img.areasItem__img src="../img/icons/svg/headphones.svg"
+										span.areasItem__info Call-центры и телемаркетинг
+								.areas__item.areasItem
+									.areasItem__in
+										.areasItem__imgWrapper
+											img.areasItem__img src="../img/icons/svg/cleaning.svg"
+										span.areasItem__info Клининговые <br/>компании
+								.areas__item.areasItem
+									.areasItem__in
+										.areasItem__imgWrapper
+											img.areasItem__img src="../img/icons/svg/car.svg"
+										span.areasItem__info Логистические <br/>компании и такси
+								.areas__item.areasItem.areasItem--single
+									.areasItem__in
+										.areasItem__imgWrapper
+											img.areasItem__img src="../img/icons/svg/factory.svg"
+										span.areasItem__info Заводы и фабрики
+								.areas__item.areasItem
+									.areasItem__in
+										.areasItem__imgWrapper
+											img.areasItem__img src="../img/icons/svg/building.svg"
+										span.areasItem__info Строительные <br/>компании
+							.sectionAreas__more и еще более 50 отраслей
 
 			footer.footer
 				.contentIn
-					h5.footer__title.titleMain Найдите сотрудников быстро и бесплатно
+					h4.footer__title.titleMain Найдите сотрудников быстро и бесплатно
 					p.footer__info Разместите вакансии прямо сейчас и найдите работника за 24 часа или даже быстрее!
 					a.footer__button.linkButton.linkButton--red href="#" разместить вакансию
 					.footer__apps.apps

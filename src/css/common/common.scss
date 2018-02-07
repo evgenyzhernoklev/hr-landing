@@ -34,42 +34,6 @@ a {
   background-color: $white-light;
 }
 
-.forDesktop {
-  display: block;
-}
-
-.forDesktopTablet {
-  display: block;
-}
-
-.forTablet {
-  display: none;
-}
-
-.forMobile {
-  display: none;
-}
-
-@media ($tablet) {
-  .forDesktop {
-    display: none;
-  }
-
-  .forTablet {
-    display: block;
-  }
-}
-
-@media ($mobile) {
-  .forDesktopTablet {
-    display: none;
-  }
-
-  .forMobile {
-    display: block;
-  }
-}
-
 
 
 // common blocks
