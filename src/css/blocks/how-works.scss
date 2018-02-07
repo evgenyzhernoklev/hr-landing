@@ -4,12 +4,12 @@
 
   &__imgSlider {
     float: left;
-    width: 50%;
+    width: 48%;
   }
 
   &__infoSlider {
     float: right;
-    width: 45%;
+    width: 48%;
 
     .slick-list {
       overflow: visible;
@@ -25,6 +25,33 @@
   }
 }
 
+@media ($tablet) {
+  .howtoCols {
+    padding: 47px 0 38px;
+
+    &__imgSlider,
+    &__infoSlider {
+      float: none;
+      width: 100%;
+    }
+
+    &__imgSlider {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    &__title {
+      display: none;
+
+      &--tablet {
+        display: block;
+        margin-bottom: 18px;
+        text-align: center;
+      }
+    }
+  }
+}
+
 
 
 .imgSlider {
@@ -34,8 +61,6 @@
   }
 }
 
-
-
 .infoSlider {
   &__slide {
     position: relative;
@@ -43,8 +68,7 @@
     flex-wrap: nowrap;
     align-items: center;
     margin-bottom: 12px;
-    padding: 13px 0;
-    padding-right: 10px;
+    padding: 13px 5px 13px 0;
     border-radius: 3px;
     cursor: pointer;
 
@@ -64,10 +88,7 @@
         content: '';
       }
 
-      .infoSlider__step {
-        color: $white;
-      }
-
+      .infoSlider__step,
       .infoSlider__text {
         color: $white;
       }
@@ -76,7 +97,7 @@
 
   &__step {
     display: block;
-    flex-basis: 75px;
+    flex-basis: 70px;
     flex-shrink: 0;
     padding-right: 15px;
     font-size: 30px;
@@ -90,6 +111,88 @@
   &__text {
     font-size: 16px;
     line-height: 25px;
-    transition: color $transition-normal;
+  }
+}
+
+.slick-dots {
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin-right: 13px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.slick-active {
+      button {
+        background-color: $red;
+        cursor: default;
+      }
+    }
+  }
+
+  button {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    font-size: 0;
+    line-height: 0;
+    background-color: #D8D8D8;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color $transition-normal;
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -23px;
+  @include icon(arrow_slider_left, 46px, 46px);
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &.slick-prev {
+    right: 100%;
+    margin-right: 20px;
+  }
+
+  &.slick-next {
+    left: 100%;
+    margin-left: 10px;
+    transform: rotate(180deg);
+  }
+}
+
+@media ($tablet) {
+  .infoSlider {
+    &__slide {
+      display: block!important;
+      margin-bottom: 9px;
+      padding: 0;
+      text-align: center;
+
+      &:before {
+        display: none;
+      }
+
+      &.slick-current {
+        background-color: transparent;
+
+        .infoSlider__step,
+        .infoSlider__text {
+          color: $black;
+        }
+      }
+    }
+
+    &__step {
+      margin-bottom: 11px;
+      padding-right: 0;
+    }
   }
 }

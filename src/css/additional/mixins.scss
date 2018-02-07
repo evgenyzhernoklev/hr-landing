@@ -12,6 +12,16 @@
   }
 }
 
+@mixin icon($name, $width, $height) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../img/icons/svg/#{$name}.svg');
+  background-size: $width $height;
+}
+
 @mixin show() {
   visibility: visible;
   opacity: 1;
