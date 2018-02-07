@@ -24,6 +24,12 @@ $(document).ready(function () {
         settings: {
           arrows: true
         }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          arrows: false
+        }
       }
     ]
   });

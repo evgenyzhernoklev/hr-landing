@@ -36,7 +36,7 @@
     }
 
     &__imgSlider {
-      max-width: 600px;
+      max-width: 70%;
       margin: 0 auto;
     }
 
@@ -52,14 +52,16 @@
   }
 }
 
-
-
-.imgSlider {
-
-  &__img {
-
+@media (max-width: 480px) {
+  .howtoCols {
+    &__imgSlider {
+      max-width: 100%;
+    }
   }
 }
+
+
+
 
 .infoSlider {
   &__slide {
@@ -193,6 +195,15 @@
     &__step {
       margin-bottom: 11px;
       padding-right: 0;
+    }
+
+    &__text {
+      max-width: 320px;
+      margin: 0 auto;
+
+      br {
+        display: none;
+      }
     }
   }
 }
