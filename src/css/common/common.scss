@@ -1,4 +1,10 @@
 body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $black;
+
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -72,20 +78,32 @@ a {
 }
 
 .titleMain {
+  font-weight: 800;
+  font-size: 33px;
+  line-height: 45px;
 
   &__helper {
-
+    color: $red;
   }
 }
 
 .contentIn {
   position: relative;
-  // max-width: 1000px;
-  // min-width: 320px;
+  max-width: 1124px;
+  min-width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 50px;
+}
+
+@media ($tablet) {
+  .contentIn {
+    padding: 0 25px;
+  }
 }
 
 @media ($mobile) {
-
+  .titleMain {
+    font-size: 26px;
+    line-height: 35px;
+  }
 }

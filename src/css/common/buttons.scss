@@ -1,4 +1,12 @@
 .linkButton {
+  display: inline-block;
+  height: 63px;
+  padding: 0 34px;
+  font-size: 15px;
+  line-height: 63px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 3px;
   cursor: pointer;
   transition: color $transition-normal, background-color $transition-normal, border-color $transition-normal, opacity $transition-normal;
 
@@ -12,13 +20,47 @@
 }
 
 .linkButton--gray {
-  
+  height: 50px;
+  padding: 0 37px;
+  font-size: 12px;
+  line-height: 50px;
+  color: $black;
+  background-color: #F0F0F0;
+
+  &:hover {
+    background-color: $white-light;
+  }
 }
 
 .linkButton--red {
+  color: $white;
+  background-color: $red;
 
+  &:hover {
+    background-color: #ff6581;
+  }
 }
 
 .linkButton--redShadow {
 
+}
+
+.linkButton--transparent {
+  height: 50px;
+  line-height: 48px;
+  color: $black;
+  border: 1px solid rgba(0,0,0, 0.3);
+  background-color: transparent;
+}
+
+@media ($mobile) {
+  .linkButton {
+    height: 50px;
+    font-size: 13px;
+    line-height: 50px;
+  }
+
+  .linkButton--transparent {
+    line-height: 48px;
+  }
 }

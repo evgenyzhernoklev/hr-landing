@@ -20,6 +20,10 @@
 }
 
 @media ($tablet) {
+  .colFlex--3 {
+    flex-basis: 100%;
+  }
+
   .colFlex--4 {
     flex-basis: 50%;
   }

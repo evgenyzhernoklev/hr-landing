@@ -3,6 +3,7 @@ $white-light:   #F5F5F5;
 $black:         #000;
 
 $gray:          #A5ADBA;
+$red:           #F15F79;
 
 // animation
 $transition-normal: .3s linear;
@@ -10,10 +11,6 @@ $transition-fast: .1s linear;
 
 
 
-// fonts
-
-
-
 // screen resolutions
-$tablet: 'max-width: 992px';
-$mobile: 'max-width: 767px';
+$tablet: 'max-width: 920px';
+$mobile: 'max-width: 720px';

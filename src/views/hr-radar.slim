@@ -2,7 +2,6 @@ doctype html
 html
 	head
 		meta charset="utf-8"
-		meta http-equiv="X-UA-Compatible" content="IE=edge"
 		meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
 		title Radar
 		meta name="description" content=""
@@ -66,22 +65,25 @@ html
 
 			section.sectionAdvantages
 				.contentIn
-					.titleMain
-						| Почему
+					.sectionAdvantages__title.titleMain
+						| Почему&nbsp;
 						span.titleMain__helper Radar?
 					.colsFlex.advantages
-						.colFlex.colsFlex--3
-							img.advantages__img src=""
-							p.advantages__title
-							p.advantages__info
-						.colFlex.colsFlex--3
-							img.advantages__img src=""
-							p.advantages__title
-							p.advantages__info
-						.colFlex.colsFlex--3
-							img.advantages__img src=""
-							p.advantages__title
-							p.advantages__info
+						.advantages__col.colFlex.colFlex--3
+							.advantages__imgWrapper
+								img.advantages__img.advantages__img--step1 src="../img/icons/svg/crown.svg"
+							p.advantages__title Это бесплатно
+							p.advantages__info Бесплатно размещайте вакансии в неограниченном количестве
+						.advantages__col.colFlex.colFlex--3
+							.advantages__imgWrapper
+								img.advantages__img.advantages__img--step2 src="../img/icons/svg/speedometer.svg"
+							p.advantages__title Это быстро
+							p.advantages__info Публикуйте вакансии за минуту, а информативные профили кандидатов позволят не тратить время напрасно
+						.advantages__col.colFlex.colFlex--3
+							.advantages__imgWrapper
+								img.advantages__img.advantages__img--step3 src="../img/icons/svg/chair.svg"
+							p.advantages__title Это удобно
+							p.advantages__info Просматривайте ленту кандидатов, принимайте отклики, предлагайте вакансии, звоните и пишите
 
 			section.sectionAreas
 				.contentIn
@@ -133,5 +135,6 @@ html
 							img.apps__logo src="../img/icons/svg/app_google.svg"
 						a.apps__link href="#"
 							img.apps__logo src="../img/icons/svg/app_apple.svg"
+						a.apps__button.linkButton.linkButton--transparent href="#" скачать приложение
 
 		script src="../js/app.js"

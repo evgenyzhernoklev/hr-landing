@@ -1,17 +1,114 @@
 .sectionAdvantages {
-  
+  padding: 73px 0 104px;
+  border-bottom: 1px solid #DDDDDD;
+
+  &__title {
+    margin-bottom: 65px;
+    text-align: center;
+  }
 }
 
 .advantages {
-  &__img {
+  text-align: center;
 
+  &__col {
+    padding: 0 20px;
+  }
+
+  &__imgWrapper {
+    margin-bottom: 35px;
+    height: 120px;
+    line-height: 120px;
+  }
+
+  &__img {
+    vertical-align: bottom;
   }
 
   &__title {
-
+    margin-bottom: 13px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
   }
 
   &__info {
+    max-width: 300px;
+    margin: 0 auto;
+    line-height: 23px;
+  }
+}
 
+@media ($tablet) {
+  .sectionAdvantages {
+    padding-bottom: 67px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+
+  .advantages {
+    &__col {
+      margin-bottom: 40px;
+      padding: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__imgWrapper {
+      height: auto;
+      line-height: 0;
+    }
+
+    &__info {
+      max-width: 460px;
+    }
+  }
+}
+
+@media ($mobile) {
+  .sectionAdvantages {
+    padding: 53px 0 44px;
+
+    &__title {
+      margin-bottom: 48px;
+    }
+  }
+
+  .advantages {
+    &__col {
+      margin-bottom: 45px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__imgWrapper {
+      margin-bottom: 25px;
+    }
+
+    &__img {
+      &--step1 {
+        width: 78px;
+      }
+
+      &--step2 {
+        width: 74px;
+      }
+
+      &--step3 {
+        width: 75px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 6px;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
